@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <title>Power calculation</title>
     <script src="script.js"></script>
 <style>
@@ -39,20 +41,20 @@
     }                                
 </style>
 </head>
-<body>
+<body class="flex-box">
     <h1>Power Calculation</h1>
-    <form>
+    <form class="flex-box">
         <div >
         <label for ='current'>Current: &emsp;&emsp;&emsp;&emsp;&emsp;</label>
-        <input type="text" id="current" value=0 />(in A)<br>
+        <input  class= "flex-box"type="text" id="current" value=0 />(in A)<br>
         </div>
         <div>
         <label for ='resistance'>Resistance:&emsp;&emsp;&emsp;&emsp;</label>
-        <input type="text" id="resistance" value=0 />(in ohm)<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" class="flex-box" id="resistance" value=0 />(in ohm)<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         <button type="button" value="Calculate" onclick="calculate()" style="font-family:Lucida Calligraphy">Calculate Power</button>
     <div style="margin-top: 20px;">
-            Power produced:&emsp;<input type="text" id="power" value=0 >(in W)<br>
+            Power produced:&emsp;<input class="flex-box" type="text" id="power" value=0 >(in W)<br>
     </div>
     </form>
 
